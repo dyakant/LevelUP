@@ -1,0 +1,347 @@
+*************************************************************************************
+27/06/2018 - Angular
+*************************************************************************************
+www.angular.io
+
+    (различное поведение скролла в разных браузерах)
+
+Стандартный запрос к севреру - XmlHttpRequest (на learnjs)
+Фреймворк делает запросы удобнее.
+
+Проблемы с SEO - роботы плохо работают с фреймворком
+
+
+RxJS (observerable)
+
+Используется TypeScript. Язык типизирует переменные. 
+Он полностью обеспечивает принципы ООП: 
+ - инкапсуляция: (private);
+ - наследование: class B extends A {...};
+    abstract - абстрактный класс. Из него нельзя создавать объекты
+ - полиморфизм, определяет общее поведение: 
+       implements <interface>, 
+       где interface описывает обязательные объекты, которые должны быть описаны в классе.
+
+Далее по https://angular.io/guide/quickstart
+
+Архитектура:
+    - модули
+    - компоненты
+    - сервисы
+    - директивы
+    - pipe - трансформация значений для отображения
+
+
+
+*************************************************************************************
+20/06/2018 *Анимация*
+*************************************************************************************
+Пример с наведением курсора на картинку и её закрашиванием (20:05-21:45)
+?hover
+?инлайн, блочные элементы
+?трансформ-transform: translate(-50%, -50%) для передвижения кнопки
+?overflow: hidden; -скрывает дочернии элементы вне границ блока
+
+transition для того, чтобы менять свойства со временем. 
+Прописывается вместе со всеми свойствами в селекторе
+
+transition: property time function delay;
+
+    transition: 3sec easy; - менять свойства в течениее
+    transition: 3sec cubic-bezier(...); (see cubic-bezier.com)
+
+?? --web-kit
+
+
+Использование JS для добавления класса через интервал,setInterval. Для переопределения свойств.
+
+22:00
+Анимация Transition - однократная, сработала по событию (Hover) и закончилась.
+
+Семейство свойств "animation" можно использовать для повторяющейся анимации
+    animation-duration: <интервал анимации>
+    animation-delay: <длительность анимации>
+    animation-name: <имя анимации>
+
+    @keyframes <имя анимации>{
+        %(шаг анимации от времени animation-delay)
+        %33 {
+            transform: rotate(-15deg);
+        }
+        %66 {
+            transform: rotate(+30deg);
+        }
+        %100 {
+            transform: rotate(-15deg);
+        }
+
+        from { }  //но целесообразнее использовать шаги
+        to { }
+    }
+
+
+Transition работает быстрее чем Animation!
+
+
+??Что такое SVG
+Макет фотошопа. Какждый слой это элемент SVG. Для каждого элемента свой блок.
+
+
+* GRID Layout *
+Разметка по сетке. Можно позиционировать непосредственно каждый блок.
+display: grid;
+
+
+
+))simpsons css
+!Пятнашки на grid+js или css
+
+*************************************************************************************
+13/06/2018
+*************************************************************************************
+Bootstrap
+
+_reboot.css - типа reset or normalize
+_variables - описаны переменный
+        !default позволяет переопределить переменную
+
+В свой кастомный файл scss подключаем основные файлы и те, которые планируем менять.
+carousel
+dropdown
+
+Grid system 12 columns
+
+behance.net - макеты
+
+Materialize - 
+UIKit   
+
+*************************************************************************************
+23/05/2018
+*************************************************************************************
+Zeplin - Программа для просмотра размеров дизайна
+
+Верстка Меню и первого блока:
+Создаём пустой index.html
+Подключаем normalize.css
+В Main.scss вводим стиль для body, подключаем картинку, как background
+Navbar должен оставаться сверху. Пишем его в <Header>
+Следующий контент пишем в div блок с классом "main-content", он же <main>
+--"canvas" для подгрузки графики
+--"aside" для sidebar
+--<nav> для навигации
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*************************************************************************************
+16/05/2018: https://meet691593211.adobeconnect.com/p2nyvpwi4oij/?proto=true
+*************************************************************************************
+Типы верстки:
+- фиксированная
+- резиновая
+- адаптиваная
+@media rule - исключения
+@media only screen and (max-width: 600px) {...}
+
+Основная вёрстка: Ширина основного контента 1200px. Сперва уменьшается боковые поля. 
+Дальше сужается контент, затем (1000px) блоки будут менять положение.
+
+Методологии организации кода CSS:
+* БЭМ - Блок-Элемент-Модификатор
+Суть: макет разбивается на блоки, прописываются стили для блока.
+block_name__elem-name
+* SMACSS
+* ECSS
+* OOCSS
+* MCSS
+
+* URLs
+методологии:
+https://webformyself.com/css-metodologii-css-bem-smac.. 
+https://webformyself.com/vvedenie-v-obektno-orientiro.. 
+https://www.keycdn.com/blog/oocss/ 
+https://medium.com/@stepanovv.ru/%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-css-oocss-smacss-bem-%D0%B8-sass-49351a119283
+https://operatino.github.io/MCSS/ 
+
+Препроцессоры:
+* less (написан на JS) - Live SA  
+* sass (написан на Ruby) - Live SASS Compiler
+Файлы .less, .scss компилируются в код cscs
+
+Live SASS Compiler
+-Переменные $name
+-Вложенность селекторов, соединение через &
+-Импорт, @import 'file.scss';
+-Миксины, функции
+-Расширение, наследование: @extend
+https://sass-scss.ru/guide/
+
+файлы:
+https://meyerweb.com/eric/tools/css/reset/reset.css 
+http://nicolasgallagher.com/about-normalize-css/
+
+
+*************************************************************************************
+10/05/2018: https://meet691593211.adobeconnect.com/pm9z21r6iatq/
+*************************************************************************************
+|   События (learn.javascript.ru)
+-------------------------------------------------------------------------------------
+- События мыши (click, contextmenu, mouseover,mousedown, mouseup, mousemoveo)
+- Формы управления (submit, focus)
+- Клавиатурные События
+- События документа
+- События CSS (transition)
+
+Добавление обработчика:
+<input value="press on me" onclick="alert("Click!")" type="button">
+
+elem.onclick = function() {
+    alert("Click!");
+} // такой подход ограничивает привязывание обработчиков, одно События - один обработчик.
+elem.onclick = <link to function>
+
+// Лиссенер лучше
+// Подписка на событие
+elem.addEventListener(event, handler[, phase])
+elem.removeEventListener(event, handler)
+
+Есть две фазы погружения: сверху-вниз (1 phase) <> событие <> снизу-вверх (2 phase)
+Можно остановить событие 
+    event.stopPropagation();
+
+&21:11-21:30 - пример магии остановки событий
+
+-------------------------------------------------------------------------------------
+| Создание элементов (www.learn.javascript.ru/modifying-element)
+-------------------------------------------------------------------------------------
+element=createElement('tag')
+createTextMode
+element.innerHTML='<html content>';
+#id.appendChildren(element); //добовляет элемент в конец
+#id.insertBefore(element, #id.children(number)); //добовляет элемент перед другим
+#id.insertBefore(element, #id.firstChildren; //добовляет элемент в начало
+
+#jQuery (21:45)
+$('#parent').append('<div>hello</div>')
+$('<div>hello</div>').appendto($('#parent'))
+$('#parent').html('bla-bla')
+
+
+#Примеры
+&21:50-22:05 . Пример добавления строки в таблицу
+?Использование ID?
+&22:05-22:30 . Пример удаления строки в таблице
+&&22:21 - добавление аттрибутов элементу через JS
+&22:35 - небольшая оптимизация
+
+
+*************************************************************************************
+07/05/2018. 
+-------------------------------------------------------------------------------------
+| Flex-box
+-------------------------------------------------------------------------------------
+http://html5.by/blog/flexbox/
+
+"float" - способ вёрстки
+
+Чтобы включить Flex для родительского элемента:
+    display: flex;
+
+Основные свойства:
+1) flex-direction: column;   (Mobile Edge не знает эту опцию)
+                 : row; --default
+
+2) justify-content: --выравнивание по горизонтали
+    space-around, 
+
+3) align-items      --выравнивание по вертикали
+    ??baseline - можно ли менять позицию - расчитывается автоматом
+
+4) flex-wrap
+
+5) align-content
+
+
+https://maxsteenbergen.com/fibonacci
+
+--webkit - префиксы для поддержки старых браузеров. Могут быть добавлены автоматически
+
+-------------------------------------------------------------------------------------
+| DOM (Document Object Model)
+-------------------------------------------------------------------------------------
+https://learn.javascript.ru/dom-nodes
+(так же хорошая книга "Выразительный JavaScript")
+
+document.getElementByID()
+
+elme
+
+
+
+-------------------------------------------------------------------------------------
+| jQuery
+-------------------------------------------------------------------------------------
+Библиотека для доступа к ДОМ.
+
+Синтаксис:
+    $(селектор).класс("")
+...
+
+Мучаем ДЗ:
+1) Ставим идентификатор, id="some-id"
+2) Правим js-script:
+const element = document.getElementById('some-id');
+console.log(element);
+const elems = element.children; --HTML Collection, it's not an array
+console.log(elems);
+console.log(elems[0].innerHTML); //покажет разметку
+console.log(elems[0].innerText); //покажет весь текст
+previousSibling         //соседний элемент-любой
+previousElementSibling  //соседний элемнт-тэг
+elems[0].nextElementSibling.innerHTML='new value' //
+
+const byClass = document.getElementByClassName('some-class');
+//const byTag = byClass[0].getElementByTagName('some-tag'); //byClass возвращает коллекцию
+const byTag = document.getElementByTagName('some-tag');
+alert(byTag ? byTag.length : 'none');
+byTag[0].value='new-value';
+const add = 'value2';
+byTag[0].value += add;
+alert(byTag[0].value);
+
+let data={}
+data.skill = byTag[0].value;
+data.someOtherValue = byTag[0].value;
+console.log(data);
+
+
+
+
+====================================================
+Факультатив 1: 
+https://meet691593211.adobeconnect.com/pkv05kbcwlf5/
+Факультатив 2:
+https://meet691593211.adobeconnect.com/p2nyvpwi4oij/
+Факультатив 3:
+https://meet691593211.adobeconnect.com/pr1i8slrytld/
+Факультатив 4: 
+https://meet691593211.adobeconnect.com/pha6kvocplrr/
+Факультатив 5:  
+https://meet691593211.adobeconnect.com/ptga6e3pkcvq/
+Факультатив 6:  
+https://meet691593211.adobeconnect.com/pqsnlygagvvi/
+Факультатив 7:  
+https://meet691593211.adobeconnect.com/poorw0rescxz/
+Факультатив 8:  
+https://meet691593211.adobeconnect.com/pqhni85z8pku/

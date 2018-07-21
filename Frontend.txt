@@ -1,0 +1,252 @@
+======================================================================
+28/05/2018
+----------------------------------------------------------------------
+prop-types - библиотека по описании типов 
+    PropTypes.func.isRequired
+    PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.number,
+        name: PropTypes.string
+    })).isRequired
+
+
+React Router - переход между страницами
+21:00 Пример с router
+??? "хэш" навигация, браузер-навигация
+ import {Link} from 'react-router-dom'
+ history, location, match
+
+
+* Запросы к серверу: *
+Create (Post) - данные передаются в теле заголовка, невидны. Если https, то зашифрованы. Для сохранения данных
+Read (Get) - данные передаются в открытом виде "?name=6". Используется для поиска
+Update (Put) - по сущности - это Post, меняется заголовок
+Delete (Delete) - по сущности - это Post, меняется заголовок
+
+И ещё много разных: Copy, Lock, options.....
+Например, с хоста exam.com идёт Options запрос на ya.ru/. Возвращает возможные опции.
+
+Статусы ответов:
+1xx - информационные
+2xx - успешные
+3xx - redirection
+4xx - коды ошибок (приложения)
+5xx - ошибки сервера
+
+
+//jsonplaceholder.typicode.com - api для тестирования запросов
+
+
+componentWillMount()
+    fetch - запрашивает post запрос с сервера. Это асинхронная функция, стандартная.
+        Возвращает объект Promise(функция1-успех, функция2-ошибка) в data
+        .then(функция1-успех, функция2-ошибка) - что будет выполняться следующим, следующий объект.  Тоже две фуккции
+        .catch() -  выполняется в случае ошибки
+        .finally() - всегда выполняется
+
+???axios?
+
+async function f(){
+    const data = await fetch('ya.ru');
+    const json = await data.json();
+}
+// async await - ожидает ответа, синхронный ответ
+
+???синхронные/асинхронные запросы
+
+
+
+======================================================================
+24/05/2018
+----------------------------------------------------------------------
+redux, reducers, actions, react-redux, connect, dispatch
+
+======================================================================
+21/05/2018
+----------------------------------------------------------------------
+JSX-синтаксический сахар
+className = class
+classNameNew = class-name-new
+
+В src создаем попку components. В ней добавляем папки по логическим блокам, 
+например, Header. С большой буквы, т.к. так же будет называться класс.
+В папке файл можно назвать просто index.js. При импорте система всё найдёт.
+import Header from 'src/components/Header'
+
+
+this.state - локальное состояние компонентам.
+this.props - передаются наружу, не изменяются
+
+Фрагменты, стэйты - состояния
+20:45 - 20:55 |<(
+
+В PureComponent определена функция componentShouldUpdatekk
+
+
+события привязываются атрибутами в элементах (21:00)
+
+this.forceUpdate()
+
+Function render() не должна менять ничего. Только вызывать.
+
+Можно почитать reactjs.org/docs
+
+--------------------------------------------
+React-Bootstrap
+--------------------------------------------
+npm i react-bootstrap
+import {Grid, Navbar} from 'react-bootsrap'
+
+21:30 - 22:45 Пример корзины
+    22:20 - 22:30 - отладка, можно пропустить
+
+? Вместо Lodash.findIndex свою функцию
+? Lodash - откуда узнается про библиотеки
+? Во что компилятор react превращает Lodash.findIndex, в JS функции?
+?+ В какой момент прорисовка? - setState отрисовывает изменённые элементы
+? Методы массивов, учить?
+? Как идёт верстка в проекте, где хранятся исходники, что выкатывается на продакшн
+
+
+
+======================================================================
+17/05/2018
+----------------------------------------------------------------------
+reactjs.org -   библиотека, кот. рендерит страницу и работает с событиями
+                Начиная с версии 16, появилась фича, кот. укоряет работу.
+                Основан на виртуальном DOM, язык 
+
+angular.io      - версия 2 (6). Особенности: работает TypeScript (JS  с типизацией)
+                  позволяет не использовать Babel.
+angularjs.org   - версия 1, старая и уже не используется
+
+vuejs.org - отсносительно простой, объединяет возможности реакта и ангуляра
+            Используется в Китае.Работа шаблонами, события js
+
+*** REACT ***
+
+CDN - 
+
+npx create-react-app <папка> - создаёт проект, копирует файлы
+
+npm i - install node_modules from folder with package.json
+
+
+Входная точка src/index.js
+App.js обязательно импорт класса React из React. Далее наследуем класс от Component or PureComponent
+
+
+npm start
+
+npm run build
+
+npm eject - открепляет проект от react. Использует Webpack
+
+gatsby - фреймворк для создания сайтов (studio 98)
+
+
+21:50 - Пример работы Реакт с компонентами, reactdatepicker
+
+======================================================================
+14/05/2018
+----------------------------------------------------------------------
+jquery.page2page.ru
+
+Повторение всплытия событий, stopPropagation
+document.querySelector("#id").addEventListener(event, handler)
+
+----------------------------------------------------------------------
+20:45 - Функции в JS, классы,
+----------------------------------------------------------------------
+Функции - конструкторы: позволяют создавать объекты
+function Person(){
+    this.
+}
+// this по умолчанию undefined,
+
+const obj = {
+    name = "John";
+}
+function Person(name){
+    this.name
+}
+const obj2 = new Person("lada");
+
+Object -> Prototype
+Прототип появляется, когда объект создается через функцию
+
+Person.apply(context, handler1, handler2)
+Person.call(context, handler1, handler2)
+//1-параметром передаётя объект
+
+
+Person.bind
+//Привязывает объект
+|( 21:15 
+
+function создаёт свою область и свой this. Стрелочная функция использует родительский this;
+В function можно использовать self для ссылки к родительскому объекту.
+
+Наследование
+
+class Person2{
+    constructor(name){
+        this.name=name;
+    }
+    red(){console.log(this.name)}
+}
+class Man extends Person2{
+    constructor(name, age){
+        super(name);
+        this.age = age; //this нельзя вызывать раньше чем super
+    }
+    green(){console.log(this.age)}
+    red(){"Man"}
+
+//_ag1 - private variable
+    get age1(){
+        return this._age1;
+    }
+    set age1(a){
+        if(Number.isInteger(a)){
+            this._age1=a;
+        }
+        return
+    }
+
+}
+
+====================================================
+Занятие 1: 
+https://meet691593211.adobeconnect.com/pk3t7lpzvrur/
+Занятие 2:
+https://meet691593211.adobeconnect.com/pd0kahv70u25/
+Занятие 3:
+https://meet691593211.adobeconnect.com/p7iaq4jjiryg/
+Занятие 4:
+https://meet691593211.adobeconnect.com/ppxsiy5sf621/
+Занятие 5:
+https://meet691593211.adobeconnect.com/pgr8etpmg5we/
+Занятие 6:
+https://meet691593211.adobeconnect.com/phkmehfaf2ev/
+Занятие 7:
+https://meet691593211.adobeconnect.com/pakef2cbg8xg/
+Занятие 8:
+https://meet691593211.adobeconnect.com/py19bs8ve0zd/
+Занятие 9:
+https://meet691593211.adobeconnect.com/pm9z21r6iatq/
+Занятие 10:
+https://meet691593211.adobeconnect.com/p9f1d4ia7nl8/
+Занятие 11:
+https://meet691593211.adobeconnect.com/peh9wlrob3q0/
+Занятие 12:
+https://meet691593211.adobeconnect.com/pml2lqsihqt3/
+Занятие 13: 
+https://meet691593211.adobeconnect.com/palzrdv49ow6/
+Занятие 14: 
+https://meet691593211.adobeconnect.com/py71hkwzo9vs/
+Занятие 15:  
+https://meet691593211.adobeconnect.com/phpj1fm8typu/
+Занятие 16:
+https://meet691593211.adobeconnect.com/phyr6izydoym/
+Занятие 17: 
+https://meet691593211.adobeconnect.com/p8lpe208s2mc/
