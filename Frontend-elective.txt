@@ -334,18 +334,18 @@ console.log(data);
 
 ====================================================
 Факультатив 1: 25/04/2018
-https://meet691593211.adobeconnect.com/pkv05kbcwlf5/
+https://meet691593211.adobeconnect.com/pkv05kbcwlf5/frontend_elective_01.zip?download=zip
 Факультатив 2: 16/05/2018
-https://meet691593211.adobeconnect.com/p2nyvpwi4oij/
+https://meet691593211.adobeconnect.com/p2nyvpwi4oij/frontend_elective_02.zip?download=zip
 Факультатив 3:
-https://meet691593211.adobeconnect.com/pr1i8slrytld/
+https://meet691593211.adobeconnect.com/pr1i8slrytld/frontend_elective_03.zip?download=zip
 Факультатив 4: 
-https://meet691593211.adobeconnect.com/pha6kvocplrr/
+https://meet691593211.adobeconnect.com/pha6kvocplrr/frontend_elective_04.zip?download=zip
 Факультатив 5:  
-https://meet691593211.adobeconnect.com/ptga6e3pkcvq/
+https://meet691593211.adobeconnect.com/ptga6e3pkcvq/frontend_elective_05.zip?download=zip
 Факультатив 6:  
-https://meet691593211.adobeconnect.com/pqsnlygagvvi/
+https://meet691593211.adobeconnect.com/pqsnlygagvvi/frontend_elective_06.zip?download=zip
 Факультатив 7:  
-https://meet691593211.adobeconnect.com/poorw0rescxz/
+https://meet691593211.adobeconnect.com/poorw0rescxz/frontend_elective_07.zip?download=zip
 Факультатив 8:  
-https://meet691593211.adobeconnect.com/pqhni85z8pku/
+https://meet691593211.adobeconnect.com/pqhni85z8pku/frontend_elective_08.zip?download=zip

@@ -268,36 +268,36 @@ class Man extends Person2{
 
 ====================================================
 Занятие 1: 09/04/2018
-https://meet691593211.adobeconnect.com/pk3t7lpzvrur/
+https://meet691593211.adobeconnect.com/pk3t7lpzvrur/output/01_frontend.zip?download=zip
 Занятие 2: 12/04/2018
-https://meet691593211.adobeconnect.com/pd0kahv70u25/
+https://meet691593211.adobeconnect.com/pd0kahv70u25/output/02_frontend.zip?download=zip
 Занятие 3: 16/04/2018
-https://meet691593211.adobeconnect.com/p7iaq4jjiryg/
+https://meet691593211.adobeconnect.com/p7iaq4jjiryg/output/03_frontend.zip?download=zip
 Занятие 4: 19/04/2018
-https://meet691593211.adobeconnect.com/ppxsiy5sf621/
+https://meet691593211.adobeconnect.com/ppxsiy5sf621/output/04_frontend.zip?download=zip
 Занятие 5: 23/04/2018
-https://meet691593211.adobeconnect.com/pgr8etpmg5we/
+https://meet691593211.adobeconnect.com/pgr8etpmg5we/output/05_frontend.zip?download=zip
 Занятие 6: 26/04/2018
-https://meet691593211.adobeconnect.com/phkmehfaf2ev/
+https://meet691593211.adobeconnect.com/phkmehfaf2ev/output/06_frontend.zip?download=zip
 Занятие 7: 03/05/2018 *Антон
-https://meet691593211.adobeconnect.com/pakef2cbg8xg/
+https://meet691593211.adobeconnect.com/pakef2cbg8xg/output/07_frontend.zip?download=zip
 Занятие 8: 07/05/2018 *Антон
-https://meet691593211.adobeconnect.com/py19bs8ve0zd/
+https://meet691593211.adobeconnect.com/py19bs8ve0zd/output/08_frontend.zip?download=zip
 Занятие 9: 10/05/2018 *Антон
-https://meet691593211.adobeconnect.com/pm9z21r6iatq/
+https://meet691593211.adobeconnect.com/pm9z21r6iatq/output/09_frontend.zip?download=zip
 Занятие 10: 14/05/2018
-https://meet691593211.adobeconnect.com/p9f1d4ia7nl8/
+https://meet691593211.adobeconnect.com/p9f1d4ia7nl8/output/10_frontend.zip?download=zip
 Занятие 11: 17/05/2018
-https://meet691593211.adobeconnect.com/peh9wlrob3q0/
+https://meet691593211.adobeconnect.com/peh9wlrob3q0/output/11_frontend.zip?download=zip
 Занятие 12: 21/05/2018
-https://meet691593211.adobeconnect.com/pml2lqsihqt3/
+https://meet691593211.adobeconnect.com/pml2lqsihqt3/output/12_frontend.zip?download=zip
 Занятие 13: 24/05/2018
-https://meet691593211.adobeconnect.com/palzrdv49ow6/
+https://meet691593211.adobeconnect.com/palzrdv49ow6/output/13_frontend.zip?download=zip
 Занятие 14: 28/05/2018
-https://meet691593211.adobeconnect.com/py71hkwzo9vs/
+https://meet691593211.adobeconnect.com/py71hkwzo9vs/output/14_frontend.zip?download=zip
 Занятие 15: 31/05/2018
-https://meet691593211.adobeconnect.com/phpj1fm8typu/
+https://meet691593211.adobeconnect.com/phpj1fm8typu/output/15_frontend.zip?download=zip
 Занятие 16: 04/06/2018
-https://meet691593211.adobeconnect.com/phyr6izydoym/
+https://meet691593211.adobeconnect.com/phyr6izydoym/output/16_frontend.zip?download=zip
 Занятие 17: 07/06/2018
-https://meet691593211.adobeconnect.com/p8lpe208s2mc/
+https://meet691593211.adobeconnect.com/p8lpe208s2mc/output/17_frontend.zip?download=zip
