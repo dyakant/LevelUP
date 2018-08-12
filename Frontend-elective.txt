@@ -1,6 +1,37 @@
 *************************************************************************************
-27/06/2018 - Angular
+11/07/2018 Факультатив 10
 *************************************************************************************
+ https://github.com/alianta
+ https://github.com/ManWanna/FirstRepo
+ https://proglib.io/p/frontend-interview/
+ https://jsehelper.blogspot.com/2016/04/front-end-developer.html
+ https://habr.com/post/239065/
+ https://medium.com/@ermo4enkov/%D1%87%D1%82%D0%BE-%D0%BE%D0%B6%D0%B8%D0%B4%D0%B0%D1%82%D1%8C-%D0%BE%D1%82-%D1%81%D0%BE%D0%B1%D0%B5%D1%81%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B4%D0%BE%D0%BB%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8C-hmtl-%D0%B2%D0%B5%D1%80%D1%81%D1%82%D0%B0%D0%BB%D1%8C%D1%89%D0%B8%D0%BA-junior-frontend-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82-a916de106283
+ https://habr.com/company/ruvds/blog/334538/
+ https://jopr.org/blog/detail/voprosy-na-sobesedovanii-na--dolzhnost-front-end-razrabotchika
+ https://www.digitalhr.ru/blog/interview-with-middle-front-end-developer.html?lang=ru
+ https://habr.com/post/224187/
+ https://milya.stefantsov.com/voprosy-k-sobesedovaniyu-na-dolzhnost-verstalschika/
+
+Проект
+ https://github.com/Negodyaj/juniorFrontend
+ 
+ 
+ 
+ 
+ 
+*************************************************************************************
+04/06/2018 Факультатив 9
+*************************************************************************************
+https://angularfirebase.com/lessons/angular-testing-guide-including-firebase/
+https://www.zeolearn.com/magazine/test-driven-development-with-angular-v5
+https://semaphoreci.com/community/series/test-driven-development-with-angular-2-and-webpack
+
+
+*************************************************************************************
+27/06/2018 Факультатив 8
+*************************************************************************************
+    Angular
 www.angular.io
 
     (различное поведение скролла в разных браузерах)
@@ -34,8 +65,9 @@ RxJS (observerable)
 
 
 *************************************************************************************
-20/06/2018 *Анимация*
+20/06/2018 Факультатив 7
 *************************************************************************************
+   *Анимация*
 Пример с наведением курсора на картинку и её закрашиванием (20:05-21:45)
 ?hover
 ?инлайн, блочные элементы
@@ -92,12 +124,18 @@ Transition работает быстрее чем Animation!
 display: grid;
 
 
-
 ))simpsons css
 !Пятнашки на grid+js или css
 
+----------------------------------
+http://htmlbook.ru/blog/css-grid-i-flexbox-sravnenie-na-praktike
+и ещё по гридам:
+https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
+вот тут хорошее описание, даже есть русский язык
+
+
 *************************************************************************************
-13/06/2018
+13/06/2018 Факультатив 6
 *************************************************************************************
 Bootstrap
 
@@ -117,7 +155,7 @@ Materialize -
 UIKit   
 
 *************************************************************************************
-23/05/2018
+23/05/2018 Факультатив 3
 *************************************************************************************
 Zeplin - Программа для просмотра размеров дизайна
 
@@ -145,7 +183,7 @@ Navbar должен оставаться сверху. Пишем его в <Hea
 
 
 *************************************************************************************
-16/05/2018: https://meet691593211.adobeconnect.com/p2nyvpwi4oij/?proto=true
+16/05/2018: Факультатив 2 https://meet691593211.adobeconnect.com/p2nyvpwi4oij/?proto=true
 *************************************************************************************
 Типы верстки:
 - фиксированная
@@ -191,63 +229,11 @@ https://sass-scss.ru/guide/
 https://meyerweb.com/eric/tools/css/reset/reset.css 
 http://nicolasgallagher.com/about-normalize-css/
 
-==============================================================================
-10/05/2018 * Занятие 9 ** https://meet691593211.adobeconnect.com/pm9z21r6iatq/
-==============================================================================
-|   События (learn.javascript.ru)
--------------------------------------------------------------------------------------
-- События мыши (click, contextmenu, mouseover,mousedown, mouseup, mousemoveo)
-- Формы управления (submit, focus)
-- Клавиатурные События
-- События документа
-- События CSS (transition)
-
-Добавление обработчика:
-<input value="press on me" onclick="alert("Click!")" type="button">
-
-elem.onclick = function() {
-    alert("Click!");
-} // такой подход ограничивает привязывание обработчиков, одно События - один обработчик.
-elem.onclick = <link to function>
-
-// Лиссенер лучше
-// Подписка на событие
-elem.addEventListener(event, handler[, phase])
-elem.removeEventListener(event, handler)
-
-Есть две фазы погружения: сверху-вниз (1 phase) <> событие <> снизу-вверх (2 phase)
-Можно остановить событие 
-    event.stopPropagation();
-
-&21:11-21:30 - пример магии остановки событий
-
--------------------------------------------------------------------------------------
-| Создание элементов (www.learn.javascript.ru/modifying-element)
--------------------------------------------------------------------------------------
-element=createElement('tag')
-createTextMode
-element.innerHTML='<html content>';
-#id.appendChildren(element); //добовляет элемент в конец
-#id.insertBefore(element, #id.children(number)); //добовляет элемент перед другим
-#id.insertBefore(element, #id.firstChildren; //добовляет элемент в начало
-
-#jQuery (21:45)
-$('#parent').append('<div>hello</div>')
-$('<div>hello</div>').appendto($('#parent'))
-$('#parent').html('bla-bla')
 
 
-#Примеры
-&21:50-22:05 . Пример добавления строки в таблицу
-?Использование ID?
-&22:05-22:30 . Пример удаления строки в таблице
-&&22:21 - добавление аттрибутов элементу через JS
-&22:35 - небольшая оптимизация
-
-
-====================================================
-07/05/2018 * Факультатив 2 **
-====================================================
+*******************************************************************************************
+16/05/2018 ?????????????????//
+*******************************************************************************************
 | Flex-box
 -------------------------------------------------------------------------------------
 http://html5.by/blog/flexbox/
@@ -324,28 +310,43 @@ data.skill = byTag[0].value;
 data.someOtherValue = byTag[0].value;
 console.log(data);
 
+-------------------------------------------------------
+методологии:
+https://webformyself.com/css-metodologii-css-bem-smac.. 
+https://webformyself.com/vvedenie-v-obektno-orientiro.. 
+https://www.keycdn.com/blog/oocss/ 
+https://medium.com/@stepanovv.ru/правильный-css-oocss.. 
+https://operatino.github.io/MCSS/ 
 
 
-====================================================
-25/04/2018 * Факультатив 1 **
-====================================================
+файлы:
+https://meyerweb.com/eric/tools/css/reset/reset.css 
+http://nicolasgallagher.com/about-normalize-css/
+
+*******************************************************************************************
+25/04/2018  Факультатив 1
+*******************************************************************************************
 
 
 
 ====================================================
 Факультатив 1: 25/04/2018
-https://meet691593211.adobeconnect.com/pkv05kbcwlf5/frontend_elective_01.zip?download=zip
+https://meet691593211.adobeconnect.com/pkv05kbcwlf5/
 Факультатив 2: 16/05/2018
-https://meet691593211.adobeconnect.com/p2nyvpwi4oij/frontend_elective_02.zip?download=zip
-Факультатив 3:
-https://meet691593211.adobeconnect.com/pr1i8slrytld/frontend_elective_03.zip?download=zip
-Факультатив 4: 
-https://meet691593211.adobeconnect.com/pha6kvocplrr/frontend_elective_04.zip?download=zip
-Факультатив 5:  
-https://meet691593211.adobeconnect.com/ptga6e3pkcvq/frontend_elective_05.zip?download=zip
-Факультатив 6:  
-https://meet691593211.adobeconnect.com/pqsnlygagvvi/frontend_elective_06.zip?download=zip
-Факультатив 7:  
-https://meet691593211.adobeconnect.com/poorw0rescxz/frontend_elective_07.zip?download=zip
-Факультатив 8:  
-https://meet691593211.adobeconnect.com/pqhni85z8pku/frontend_elective_08.zip?download=zip
+https://meet691593211.adobeconnect.com/p2nyvpwi4oij/
+Факультатив 3: 23/05/2018
+https://meet691593211.adobeconnect.com/pr1i8slrytld/
+Факультатив 4: 31/05/2018
+https://meet691593211.adobeconnect.com/pha6kvocplrr/
+Факультатив 5: 06/06/2018
+https://meet691593211.adobeconnect.com/ptga6e3pkcvq/
+Факультатив 6: 13/06/2018
+https://meet691593211.adobeconnect.com/pqsnlygagvvi/
+Факультатив 7: 20/06/2018
+https://meet691593211.adobeconnect.com/poorw0rescxz/
+Факультатив 8: 27/06/2018
+https://meet691593211.adobeconnect.com/pqhni85z8pku/
+Факультатив 9: 04/07/2018
+https://meet691593211.adobeconnect.com/p0iu354dm14e/
+Факультатив 10: 11/07/2018
+https://meet691593211.adobeconnect.com/p51uhzlaft7l/
